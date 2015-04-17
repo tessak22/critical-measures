@@ -1,0 +1,28 @@
+/**
+ *     project responsive
+ */
+@media only screen and (max-width: 1199px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+}
+
+@media only screen and (max-width: 991px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+}
+
+@media only screen and (max-width: 767px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+    .dropdown-menu.bedstone-bootstrap-hover-dropdown { display: block; float: none; position: relative; }
+    .dropdown-menu {box-shadow: none; border: none;}
+}
+
+@media only screen and (max-width: 480px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+}

@@ -1,0 +1,22 @@
+# WINDMILL CUSTOM
+# add www prefix
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
+RewriteRule ^(.*) http://www.example.com/$1 [R=301,L]
+
+# WINDMILL CUSTOM
+# hide git directories and files
+RedirectMatch 404 /\.git
+RedirectMatch 404 /\.notes
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

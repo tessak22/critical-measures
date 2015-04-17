@@ -1,0 +1,10 @@
+Hello. Project notes go here.
+
+Downloading WordPress
+==
+
+curl -O https://wordpress.org/latest.zip
+unzip latest.zip
+cp -r wordpress/ ./
+rm latest.zip
+rm -fr wordpress/

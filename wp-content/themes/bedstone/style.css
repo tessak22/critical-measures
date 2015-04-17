@@ -1,0 +1,333 @@
+/**
+Theme Name: Bedstone by Windmill Design
+Author: Windmill Design
+Author URI: http://www.windmilldesign.com
+Description: A custom theme by Windmill Design.
+Version: 1.15.04
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/**
+ *     wordpress default alignments
+ */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/**
+ *     Boostrap Overrides
+ */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/**
+ *     project style
+ */
+html {
+    font-size: 16px; /* http://j.eremy.net/confused-about-rem-and-em/ */
+    position: relative; /* for sticky-site-footer */
+    min-height: 100%; /* for sticky-site-footer */
+}
+
+body {
+    background: none;
+    color: #000;
+    font: 1em/1.4 arial, sans-serif;
+}
+body.sticky-site-footer {
+    margin-bottom: 150px; /* match .site-footer height */
+}
+
+a:focus,
+a img,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 none;
+}
+a.click-to-call,
+a.click-to-call:visited,
+a.click-to-call:hover,
+a.click-to-call:active {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.site-header {
+}
+
+.logo {
+    margin: 15px 0;
+}
+
+.nav-secondary {
+    text-align: right;
+}
+.nav-secondary ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-secondary li {
+    display: inline-block;
+}
+.nav-secondary li a {
+}
+
+.nav-main {
+}
+.nav-main ul {
+}
+.nav-main li {
+}
+.nav-main li a {
+}
+
+.site-main {
+    padding-bottom: 1rem;
+}
+
+.document-header {
+}
+.document-header h1 {
+}
+
+.nav-breadcrumbs {
+}
+.nav-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-breadcrumbs li {
+    display: inline-block;
+}
+.nav-breadcrumbs li:before {
+    content: '\00a0\003E\00a0'; /* &gt; */
+}
+.nav-breadcrumbs li:first-child:before {
+    content: '';
+}
+.nav-breadcrumbs li a {
+}
+
+.container-columns {
+}
+
+/**
+ *     wysiwyg content
+ *
+ *     all content is .content, lists use .content.content-list
+ */
+.content {
+}
+.content h2 {
+}
+.content h3 {
+}
+.content ul ul,
+.content ul ol,
+.content ol ul,
+.content ol ol {
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+.content li {
+    margin-bottom: .5rem;
+    line-height: 1.333;
+}
+.content .callout {
+    font-size: 1.5em;
+    line-height: 1.3;
+    font-family: serif;
+}
+.content .callout a,
+.content .callout a:visited,
+.content .callout a:hover,
+.content .callout a:active {
+}
+.content .footnote {
+    font-size: .85em;
+    line-height: 1.3;
+    font-style: italic;
+}
+.content .footnote a,
+.content .footnote a:visited,
+.content .footnote a:hover,
+.content .footnote a:active {
+}
+.content .call-to-action {
+    font-size: 1.3em;
+    line-height: 1.3;
+    font-weight: bold;
+}
+.content .call-to-action a:after {
+}
+.content .call-to-action a,
+.content .call-to-action a:visited,
+.content .call-to-action a:hover,
+.content .call-to-action a:active {
+}
+.content .call-to-action a:after,
+.content .call-to-action a:after:visited,
+.content .call-to-action a:after:hover,
+.content .call-to-action a:after:active {
+}
+
+.article-header {
+}
+.article-header h1 {
+}
+.article-header h1 a {
+}
+
+.nav-article-meta {
+}
+.nav-article-meta ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-article-meta li {
+    display: inline;
+}
+.nav-article-meta li:before {
+    content: '\00a0\2013\00a0'; /* &ndash; */
+}
+.nav-article-meta li:first-child:before {
+    content: '';
+}
+.nav-article-meta li a {
+}
+
+.nav-prevnext {
+    overflow: hidden;
+    margin: .5rem 0;
+}
+.nav-prevnext ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-prevnext li {
+    width: 40%;
+    float: left;
+}
+.nav-prevnext li.nav-item-next {
+    float: right;
+    text-align: right;
+}
+.nav-prevnext li a {
+}
+.nav-prevnext li.nav-item-prev a:before {
+}
+.nav-prevnext li.nav-item-next a:after {
+}
+
+.nav-pagination {
+    overflow: hidden;
+    margin: .5rem 0;
+}
+.nav-pagination ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-pagination li {
+    display: inline-block;
+}
+.nav-pagination li .page-numbers {
+    display: block;
+    padding: 0 .4rem;
+}
+
+.sidebar {
+}
+
+.site-footer {
+    background: #F8F8F8;
+    padding-top: 1rem;
+}
+body.sticky-site-footer .site-footer {
+    /* match body.sticky-site-footer margin-bottom */
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/**
+ *     searchform
+ */
+.searchform {
+}
+.searchform label {
+}
+.searchform .input-group {
+    width: 90%;
+    max-width: 500px;
+}
+.searchform input {
+}
+.searchform button {
+}
+
+.navbar-form {
+    padding-left: 0;
+}
+
+/**
+ *     comments
+ */
+.comment-form .form-submit,
+.comment-form .form-allowed-tags {
+    display: none;
+}
+.comment-form .form-group {
+    /* most of these are defined in functions.php */
+    width: 90%;
+    max-width: 500px;
+}
+
+/**
+ *     retina
+ */
+@media
+    (-webkit-min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (-webkit-min-device-pixel-ratio: 1.3),
+    (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 192dpi),
+    (min-resolution: 144dpi),
+    (min-resolution: 120dpi),
+    (min-resolution: 124.8dpi) {
+        .exempli-gratia { background-image: url('./images/example.png'); background-size: 123px auto; }
+}
+
+/**
+ *     print
+ */
+@media print {
+    * { background: transparent !important; color: black !important; box-shadow: none !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
+    @page { margin: 0.5cm; }
+    /* a, a:visited { text-decoration: underline; } */
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; }
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+    .site-header .logo a:after { content: ''; }
+}
