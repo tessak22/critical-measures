@@ -30,7 +30,7 @@ a.click-to-call, a.click-to-call:visited, a.click-to-call:hover, a.click-to-call
 .tagline span {font-weight: 400;}
 
 /*Nav Secondary*/
-.nav-secondary {text-align: right;}
+.nav-secondary {text-align: right; background-image: url('images/secondary-bg.jpg'); background-position: 70% 100%; background-repeat: repeat-x;}
 .nav-secondary ul {list-style: none; padding: 0;}
 .nav-secondary li {display: inline-block;}
 .nav-secondary li a {}

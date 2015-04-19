@@ -5,6 +5,8 @@
     html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
     body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
     body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+    .nav-secondary {background-position: 60% 100%;}
+
 }
 
 @media only screen and (max-width: 991px) {

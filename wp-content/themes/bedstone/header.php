@@ -35,18 +35,18 @@ if (defined('ENV_SHOW_ANALYTICS') && ENV_SHOW_ANALYTICS) {
 <!--[if IE 8]> <div class="ie8"> <![endif]-->
 <div class="container-non-site-footer-elements">
 
-<header class="site-header container" role="banner">
-
-    <div class="row">
-
-        <div class="nav-secondary col-sm-12 pull-right hidden-print">
+<div class="container-fluid nav-secondary">
+    <div class="container">
+        <div class="col-sm-12 pull-right hidden-print">
             <ul>
                 <li><a href="http://www.cmelearning.com/" target="_blank">CM Elearning</a></li>
                 <li><a href="<?php echo get_permalink( 14 ); ?>">Get Updates</a></li>
             </ul>
         </div>
-
     </div>
+</div>
+
+<header class="site-header container" role="banner">
 
     <nav class="navbar navbar-default hidden-print" id="nav_main" role="navigation">
         <div class="container-fluid">
