@@ -6,7 +6,7 @@
  */
 ?>
 
-<aside class="sidebar col-md-3" role="complementary">
+<aside class="sidebar col-md-4" role="complementary">
 
     <nav class="nav-categories hidden-print">
         <h4>Categories</h4>
