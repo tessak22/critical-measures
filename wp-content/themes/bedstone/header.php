@@ -76,14 +76,6 @@ if (defined('ENV_SHOW_ANALYTICS') && ENV_SHOW_ANALYTICS) {
         </div>
     </nav>
 
-    <div class="row">
-
-        <div class="col-sm-12">
-            <?php get_search_form(); ?>
-        </div>
-        
-    </div>
-
 </header><!-- .site-header -->
 
 <main class="site-main container">
