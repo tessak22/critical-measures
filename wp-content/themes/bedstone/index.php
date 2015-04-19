@@ -16,7 +16,7 @@
 get_header(); ?>
 
 <div class="container-columns row">
-    <div class="content content-list col-md-9" role="main">
+    <div class="content content-list col-md-8" role="main">
         <header class="document-header">
             <h1>
                 <?php

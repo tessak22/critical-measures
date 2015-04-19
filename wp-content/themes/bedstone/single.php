@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div class="container-columns row">
-    <div class="content col-md-9" role="main">
+    <div class="content col-md-8" role="main">
 
         <?php
             while (have_posts()) {
