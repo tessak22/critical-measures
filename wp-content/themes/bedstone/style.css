@@ -76,12 +76,18 @@ body.home .document-header h1 {border-bottom: none;}
 .content .call-to-action {font-size: 18px; font-weight: bold; line-height: 22px;}
 .content .call-to-action a:after {content: "»"; padding-left: 5px;}
 .content .call-to-action a {}
-.content .call-to-action a:hover {} 
+.content .call-to-action a:hover {}
 .content .call-to-action a:active {}
 .content .call-to-action a:after, .content .call-to-action a:after:visited, .content .call-to-action a:after:hover, .content .call-to-action a:after:active {}
 .article-header {}
 .article-header h1 {}
 .article-header h1 a {}
+
+/*Contextual images*/
+.contextual-image { position: relative; }
+.contextual-image figcaption { position: absolute; bottom: 15px; width: 100%; padding: 0 20px; color: #fefefe; font: italic 300 21px/1.1 'Roboto', sans-serif; text-shadow: 0 0 5px rgba(0, 0, 0, .34); }
+/*Contextual images variant: Leadership children*/
+.parent-pageid-26 .contextual-image { float: right; margin: 0 0 1rem 2rem; }
 
 /*Article Meta & Pagination*/
 .nav-article-meta {}
@@ -117,7 +123,7 @@ body.sticky-site-footer .site-footer {height: 150px; position: absolute; bottom:
 
 /*Comments*/
 .comment-form .form-submit,.comment-form .form-allowed-tags {display: none;}
-.comment-form .form-group {width: 90%; max-width: 500px;}/* most of these are defined in functions.php */ 
+.comment-form .form-group {width: 90%; max-width: 500px;}/* most of these are defined in functions.php */
 
 /*Custom Windmill Design Styles*/
 
