@@ -19,7 +19,7 @@ $query = new WP_Query($args);
         <div class="row">
             <?php if (has_post_thumbnail()) : ?>
                 <figure class="col-md-4">
-                    <?php the_post_thumbnail('medium'); ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
                 </figure>
             <?php endif; ?>
             <div class="col-md-<?php echo (has_post_thumbnail()) ? '8' : '12'; ?>">
