@@ -8,3 +8,18 @@ unzip latest.zip
 cp -r wordpress/ ./
 rm latest.zip
 rm -fr wordpress/
+
+Plugins
+==
+
+Advanced Custom Fields
+https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.1.zip
+
+CMS Tree Page View
+https://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.31.zip
+
+Contact Form 7
+https://downloads.wordpress.org/plugin/contact-form-7.4.1.1.zip
+
+Contact Form DB
+https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.8.36.zip

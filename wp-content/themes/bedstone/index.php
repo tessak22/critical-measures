@@ -15,39 +15,37 @@
 
 get_header(); ?>
 
-<header class="document-header">
-    <h1>
-        <?php
-        if (is_category()) {
-            single_cat_title();
-        } elseif (is_tag()) {
-            single_tag_title();
-        } elseif (is_author()) {
-            echo 'Author: ' . get_the_author();
-        } elseif (is_day()) {
-            echo 'Archive: ' . get_the_date('l, F j, Y');
-        } elseif (is_month()) {
-            echo 'Archive: ' . get_the_date('j Y');
-        } elseif (is_year()) {
-            echo 'Archive: ' . get_the_date('Y');
-        } elseif (is_search()) {
-            echo 'Results for: ' . get_search_query();
-        } elseif (is_home() && is_front_page()) {
-            // Settings > Reading > Front Page Displays > Your Latest Posts
-            echo get_bloginfo('name');
-        } elseif (is_home()) {
-            // Settings > Reading > Front Page Displays > Static Page > Posts Page
-            echo get_the_title(get_option('page_for_posts', true));
-        } else {
-            echo 'Archives';
-        }
-        ?>
-    </h1>
-    <?php get_template_part('nav', 'breadcrumbs'); ?>
-</header>
-
 <div class="container-columns row">
     <div class="content content-list col-md-9" role="main">
+        <header class="document-header">
+            <h1>
+                <?php
+                if (is_category()) {
+                    single_cat_title();
+                } elseif (is_tag()) {
+                    single_tag_title();
+                } elseif (is_author()) {
+                    echo 'Author: ' . get_the_author();
+                } elseif (is_day()) {
+                    echo 'Archive: ' . get_the_date('l, F j, Y');
+                } elseif (is_month()) {
+                    echo 'Archive: ' . get_the_date('j Y');
+                } elseif (is_year()) {
+                    echo 'Archive: ' . get_the_date('Y');
+                } elseif (is_search()) {
+                    echo 'Results for: ' . get_search_query();
+                } elseif (is_home() && is_front_page()) {
+                    // Settings > Reading > Front Page Displays > Your Latest Posts
+                    echo get_bloginfo('name');
+                } elseif (is_home()) {
+                    // Settings > Reading > Front Page Displays > Static Page > Posts Page
+                    echo get_the_title(get_option('page_for_posts', true));
+                } else {
+                    echo 'Archives';
+                }
+                ?>
+            </h1>
+        </header>
         <?php
         if (is_search()) {
             get_search_form();
