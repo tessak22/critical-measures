@@ -93,14 +93,14 @@ $env['DB_COLLATE'] = '';
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '$K8`bJX#?{1r1N,7c6p>KN`Jl^hu!Ujq<k{ `A,!o%$}D^h)JXs;3U26utY=re|.');
+define('SECURE_AUTH_KEY',  'e#]B@nYB7J-V4W;;|KGb+<+)YbDq#+-_!+YCt!+_v9OhCDbhaH26c35rgn&^mjGz');
+define('LOGGED_IN_KEY',    '%*nd}4lHmwhPw`6ye!RO$E{lYNR?Ulg3c!KV73=W1^o~F~e|u;c8]FzZO@no$=Mg');
+define('NONCE_KEY',        ';%aFDT$ip?+N!nWKMTa7g7o>cbA1WbB&`;oj+q^h6m4mOY<tl~?SsV-Be}7gBgK(');
+define('AUTH_SALT',        'JN!<vsaFNQURP!J9[xKEh9N<,29@A 3_62Q!=o8;E-=S%E3X;`M.1Dd^{jlB?yzq');
+define('SECURE_AUTH_SALT', 'q.t3Kt<|j+t`+dm#]1ffV<jy:GFIH78-A|Nk6.h_f~v>#i6z&7OcCWioC7Y_8Eic');
+define('LOGGED_IN_SALT',   '|?KF,<2ZU%xm,mCtUeabys _5oU|tl0o_sj62c?iVl}MO^n(wiEuxXSM`xfR$K$V');
+define('NONCE_SALT',       '9]rkim7#5A,NQuF!r^MA5[hU`*s:n(4%~OgvrZm?+0:OdXKdo]I1qE#^hB6v}E45');
 
 /**#@-*/
 
@@ -154,7 +154,7 @@ $env_hosts = array(
     'LIVE'        => 'your_LIVE_domain_here',
     'STAGING'     => 'your_STAGING_domain_here',
     'PREVIEW'     => 'your_PREVIEW_domain_here',
-    'DEVELOPMENT' => 'bedstone.windmilldesignworks.com'
+    'DEVELOPMENT' => 'cm-dev.windmilldesignworks.com'
 );
 
 if (($server_env && 'LIVE' == $server_env) || $server_host == $env_hosts['LIVE']) {
@@ -170,6 +170,9 @@ if (($server_env && 'LIVE' == $server_env) || $server_host == $env_hosts['LIVE']
         // set PREVIEW variations
     } elseif (($server_env && 'DEVELOPMENT' == $server_env) || $server_host == $env_hosts['DEVELOPMENT']) {
         // set DEVELOPMENT variations
+        $env[ 'DB_NAME' ] = 'windmill_cm';
+        $env[ 'DB_USER' ] = 'windmill_admin';
+        $env[ 'DB_PASSWORD' ] = 'ch3wy';
     }
 }
 

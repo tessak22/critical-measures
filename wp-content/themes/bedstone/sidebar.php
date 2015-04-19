@@ -6,7 +6,7 @@
  */
 ?>
 
-<aside class="sidebar col-md-3" role="complementary">
+<aside class="sidebar col-md-4" role="complementary">
 
     <div class="cta-cmelearning">
         <img src="<?php bloginfo('template_directory'); ?>/images/@TODO.png" alt="CM Elearning">
