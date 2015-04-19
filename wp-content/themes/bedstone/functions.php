@@ -61,7 +61,7 @@ function custom_enqueue_scripts() {
     $id = get_the_ID(); // use for testing page-specific styles and scripts
     // styles
     //wp_enqueue_style('style-name', get_template_directory_uri() . '/css/example.css', array(), '0.1.0');
-    //wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', '4.3.0');
+    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', '4.3.0');
     wp_enqueue_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', array(), '3.3.4');
     wp_enqueue_style('bedstone', get_stylesheet_uri(), array('bootstrap'));
     wp_enqueue_style('bedstone-responsive', get_template_directory_uri() . '/css/style-responsive.css', array('bootstrap', 'bedstone'));
