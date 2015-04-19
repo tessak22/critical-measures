@@ -1,8 +1,8 @@
-@media only screen and (max-width: 1400px) {
+/*@media only screen and (max-width: 1400px) {
     body {background: url('../images/body-content-bg-1200.jpg') no-repeat top center;}
     body.home {background: url('../images/body-home-bg-1200.jpg') no-repeat top center;}
     .site-header {top: 5px;}
-}
+}*/
 
 @media only screen and (max-width: 1199px) {
     html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */

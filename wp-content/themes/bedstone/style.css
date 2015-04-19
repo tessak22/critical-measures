@@ -26,6 +26,7 @@ a.click-to-call, a.click-to-call:visited, a.click-to-call:hover, a.click-to-call
 ::-webkit-selection {background: #D3313A; color: #FFF; text-shadow: none;}
 ::-moz-selection    {background: #D3313A; color: #FFF; text-shadow: none;}
 ::selection         {background: #D3313A; color: #FFF; text-shadow: none;}
+a:hover {text-decoration: none;}
 
 /*Site Logo*/
 .navbar-header {position: relative; width: 50%;}
@@ -137,9 +138,32 @@ body.sticky-site-footer .site-footer {height: 150px; position: absolute; bottom:
 .dropdown-menu {top: 98%; border: none; border-radius: 0; box-shadow: none;}
 
 /*Sidebar*/
-.sidebar {padding-top: 75px;}
+.sidebar {padding-top: 55px;}
+.cta-cmelearning {background: url('images/sidebar-box-bg.png') no-repeat; height: 266px; box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.6); padding: 37px 40px 30px 43px;}
+.cta-cmelearning img {padding-bottom: 20px;}
+.cta-cmelearning p {margin-bottom: 15px; line-height: 28px;}
+.cta-cmelearning a.btn-default {border-bottom: 2px solid #4d636f; text-transform: none; font-size: 13px; background: #0390b1; color: #fff; padding: 13px 19px 13px 14px;}
+.cta-cmelearning a.btn-default:hover {background: #34617a; border-bottom: 2px solid #4d636f; color: #fff;}
 
+/*Button Styles*/
+.btn-default {border: none; padding: 8px 10px; border-radius: 0; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+.btn-default:before {content: "\f0da"; font-family: 'FontAwesome'; padding-right: 10px;}
+.btn-default.teal {background: #fff; color: #547078; border: 3px solid #547078;}
+.btn-default.teal:hover {background: #547078; color: #fff;}
+.btn-default.red {background: #fff; color: #d3313a; border: 3px solid #d3313a;}
+.btn-default.red:hover {background: #d3313a; color: #fff;}
+.btn-default.blue {background: #fff; color: #0390b1; border: 3px solid #0390b1;}
+.btn-default.blue:hover {background: #0390b1; color: #fff;}
 
+/*Homepage*/
+.focus-areas {}
+.focus-areas div {background: url('images/focus-area-box-bg.png') no-repeat; min-height: 350px; background-size: 96%; padding-left: 2px; padding-right: 17px;}
+body.home .content {padding-bottom: 30px;}
+.focus-areas .teal h3 {background: #445a66; font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px;}
+.focus-areas .red h3 {background: #d3313a; font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px;}
+.focus-areas .blue h3 {background: #0390b1; font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px;}
+.focus-areas p {padding: 0 35px; margin-top: 20px; margin-bottom: 30px; font-family: 'Roboto Slab', serif; color: #444d52; font-size: 17px; font-weight: 300; line-height: 28px;}
+.focus-areas a {margin: 0 35px;}
 
 /*Retina*/
 @media
