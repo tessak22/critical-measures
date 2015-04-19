@@ -8,7 +8,6 @@
 
 get_header(); ?>
 
-
 <div class="container-columns row">
     <div class="content col-md-8" role="main">
         <h1><?php the_title(); ?></h1>

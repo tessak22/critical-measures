@@ -5,6 +5,9 @@
  * @package Bedstone
  */
 
+define('PAGE_CONTACT', 12);
+define('PAGE_LEADERSHIP', 26);
+
 /**
  * load theme defaults
  */
@@ -47,7 +50,7 @@ function custom_theme_setup()
     add_theme_support('automatic-feed-links');
     add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
     add_post_type_support('page', array('excerpt'));
-    //add_theme_support('post-thumbnails');
+    add_theme_support('post-thumbnails');
 }
 
 /**
@@ -182,7 +185,7 @@ function the_ext($key)
 /**
  * [optional] custom post types
  */
-//add_action('init', 'wd_register_custom_post_types', 0);
+add_action('init', 'wd_register_custom_post_types', 0);
 function wd_register_custom_post_types()
 {
     $arr_custom_post_type_options = array(
@@ -195,10 +198,10 @@ function wd_register_custom_post_types()
          ),
          */
         array(
-            'label' => 'staff',
-            'singular' => 'Staff Profile',
-            'plural' => 'Staff Profiles',
-            'supports' => array('title', 'editor', 'custom-fields', 'page-attributes'),
+            'label' => 'offices',
+            'singular' => 'Office',
+            'plural' => 'Offices',
+            'supports' => array('title', 'custom-fields', 'page-attributes'),
         ),
     );
     foreach ($arr_custom_post_type_options as $cpt_opts) {
