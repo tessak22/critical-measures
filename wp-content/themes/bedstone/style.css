@@ -19,8 +19,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /*Body / Link Overrides*/
 html {font-size: 16px; position: relative; /* for sticky-site-footer */ min-height: 100%; /* for sticky-site-footer */}
 body {font-family: 'Roboto', sans-serif; color: #727c82;}
+body {background: url('images/body-content-bg.jpg') no-repeat top center;}
+body.home {background: url('images/body-home-bg.jpg') no-repeat top center;}
 a:focus, a img, input:focus, textarea:focus, button:focus {outline: 0 none;}
 a.click-to-call, a.click-to-call:visited, a.click-to-call:hover, a.click-to-call:active {color: inherit; text-decoration: inherit;}
+::-webkit-selection {background: #D3313A; color: #FFF; text-shadow: none;}
+::-moz-selection    {background: #D3313A; color: #FFF; text-shadow: none;}
+::selection         {background: #D3313A; color: #FFF; text-shadow: none;}
 
 /*Site Logo*/
 .navbar-header {position: relative; width: 50%;}
@@ -30,10 +35,14 @@ a.click-to-call, a.click-to-call:visited, a.click-to-call:hover, a.click-to-call
 .tagline span {font-weight: 400;}
 
 /*Nav Secondary*/
-.nav-secondary {text-align: right; background-image: url('images/secondary-bg.jpg'); background-position: 70% 100%; background-repeat: repeat-x;}
-.nav-secondary ul {list-style: none; padding: 0;}
+.nav-secondary {text-align: right; position: relative; top: 2px;}
+.nav-secondary ul {list-style: none; padding: 0; padding-right: 15px;}
 .nav-secondary li {display: inline-block;}
-.nav-secondary li a {}
+.nav-secondary li:first-child {padding-right: 13px;}
+.nav-secondary li:first-child:after {content: " "; width: 2px; height: 12px; background: #656f75; position: absolute; top: 5px; margin-left: 13px;}
+.nav-secondary li:last-child {padding-left: 13px;}
+.nav-secondary li a {color: #656f75; font-weight: bold; text-transform: uppercase;}
+.nav-secondary li a:hover {color: #231f20; text-decoration: none;}
 
 /*Breadcrumbs*/
 .nav-breadcrumbs {}
@@ -44,10 +53,11 @@ a.click-to-call, a.click-to-call:visited, a.click-to-call:hover, a.click-to-call
 .nav-breadcrumbs li a {}
 
 /*Document Header / Page Title*/
-.content h1 {font-family: 'Roboto Slab', serif; color: #353f42; font-size: 55px; font-weight: 300; line-height: 65px; border-bottom: 1px solid #c8cacb; padding-bottom: 30px; margin-bottom: 40px;}
+.document-header h1 {font-family: 'Roboto Slab', serif; color: #353f42; font-size: 55px; font-weight: 300; line-height: 65px; border-bottom: 1px solid #c8cacb; padding-bottom: 30px; margin-bottom: 40px;}
+body.home .document-header h1 {border-bottom: none;}
 
 /*Style Guide / Wysiwyg Content*/
-.content {padding-bottom: 100px;}
+.content {padding-bottom: 100px; padding-top: 40px;}
 .content p {margin: 0 0 15px;}
 .content a {color: #0390b1;}
 .content a:hover {color: #34617a; text-decoration: none;}
@@ -112,10 +122,16 @@ body.sticky-site-footer .site-footer {height: 150px; position: absolute; bottom:
 /*Custom Windmill Design Styles*/
 
 /*Navbar*/
+.site-header {position: relative; top: 20px;}
 .navbar-default {border: none; background: transparent; border-radius: 0;}
+.navbar-collapse {padding-right: 0;}
+.navbar-default .navbar-nav > li > a {color: #831117; font-weight: bold; border-bottom: 5px solid transparent; padding: 22px 15px;}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {color: #d3313a; border-bottom: 5px solid #d3313a;}
+.navbar-default .navbar-nav > li > a.dropdown-toggle:after {content:"\f107"; font-family: 'FontAwesome'; color: #7b7b7b; font-size: 14px; padding-left: 6px;}
+.dropdown-menu {top: 98%; border: none; border-radius: 0; box-shadow: none;}
 
-
-
+/*Sidebar*/
+.sidebar {padding-top: 75px;}
 
 
 
