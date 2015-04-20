@@ -3,10 +3,24 @@ Hello. Project notes go here.
 Downloading WordPress
 ==
 
+1. Grab the zip
 curl -O https://wordpress.org/latest.zip
+
+2. Unzip it
 unzip latest.zip
-cp -r wordpress/ ./
+
+3. Copy files using either the Mac (see 3.a.) or Linux (see 3.b.) command
+
+	3.a for Mac OS X (BSD): Copy the unzipped WordPress files
+	cp -r wordpress/ ./
+	
+	3.b. for Linux (GNU): Copy the unzipped WordPress files
+	cp -RT wordpress/ ./
+
+4. Remove the zip
 rm latest.zip
+
+5. Remove the unzipped /wordpress/ files
 rm -fr wordpress/
 
 Plugins
