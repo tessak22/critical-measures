@@ -11,11 +11,10 @@
 
 <footer class="site-footer">
     <div class="container">
-        <p>Footer content is sticky by default.</p>
         <div class="copyright">
             &copy;
             <?php echo date('Y'); ?>
-            <?php echo bloginfo('name'); ?>
+            <?php echo bloginfo('name'); ?>. <span>All Rights Reserved</span> | <a href="#">Legal Disclaimer</a>
         </div>
     </div>
 </footer>
