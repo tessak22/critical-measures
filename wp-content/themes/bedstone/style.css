@@ -164,7 +164,10 @@ body.sticky-site-footer .site-footer {height: 116px; position: absolute; bottom:
 .cta-contact strong {text-transform: uppercase;}
 .cta-contact span {position: relative; top: 20px;}
 .cta-contact span:after {content: "\f18e"; font-family: 'FontAwesome'; padding-left: 12px;}
-
+body.home .call-to-action a {color: #d3313a;}
+body.home .call-to-action a:hover {color: #8e242c;}
+body.home .call-to-action a:after {content: "";}
+body.home .call-to-action a:before {content: "\f0da"; font-family: 'FontAwesome'; padding-right: 10px;}
 
 /*Button Styles*/
 .btn-default {border: none; padding: 8px 10px; border-radius: 0; font-size: 12px; font-weight: 700; text-transform: uppercase;}
