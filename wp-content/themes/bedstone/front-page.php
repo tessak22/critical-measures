@@ -21,20 +21,50 @@ get_header(); ?>
 </div>
 
 <div class="focus-areas">
+
+    <?php setup_postdata($GLOBALS['post'] =& get_post(PAGE_CROSS_CULTURAL)); ?>
     <div class="col-md-4 teal">
-        <h3>Cross-Cultural Healthcare</h3>
-        <p>Intro to this topic focus area adipiscing elit. Donec pretium lacus id lorem auctor, id gravida felis ultrices. Integer eu nunc at velit dapibus vulputate.</p>
-        <a class="btn-default teal">Learn More</a>
+        <h3><?php the_title(); ?></h3>
+        <?php the_excerpt(); ?>
+        <a href="<?php the_permalink(); ?>" class="btn-default teal">Learn More</a>
     </div>
+    <?php wp_reset_postdata(); ?>
+
+    <?php setup_postdata($GLOBALS['post'] =& get_post(PAGE_DIVERSITY_INCLUSION)); ?>
     <div class="col-md-4 red">
-        <h3>Diversity, Inclusion & Global Business</h3>
-        <p>Intro to this topic focus area adipiscing elit. Donec pretium lacus id lorem auctor, id gravida felis ultrices. Integer eu nunc at velit dapibus vulputate.</p>
-        <a class="btn-default red">Learn More</a>
+        <h3><?php the_title(); ?></h3>
+        <?php the_excerpt(); ?>
+        <a href="<?php the_permalink(); ?>" class="btn-default red">Learn More</a>
     </div>
+    <?php wp_reset_postdata(); ?>
+
+    <?php setup_postdata($GLOBALS['post'] =& get_post(PAGE_ANTI_HARASSMENT)); ?>
     <div class="col-md-4 blue">
-        <h3>Anti-Harassment Training & Coaching</h3>
-        <p>Intro to this topic focus area adipiscing elit. Donec pretium lacus id lorem auctor, id gravida felis ultrices. Integer eu nunc at velit dapibus vulputate.</p>
-        <a class="btn-default blue">Learn More</a>
+        <h3><?php the_title(); ?></h3>
+        <?php the_excerpt(); ?>
+        <a href="<?php the_permalink(); ?>" class="btn-default blue">Learn More</a>
+    </div>
+    <?php wp_reset_postdata(); ?>
+</div>
+
+<div class="services row">
+    <div class="col-md-12">
+        <?php
+            setup_postdata($GLOBALS['post'] =& get_post(PAGE_SERVICES));
+            the_excerpt();
+            wp_reset_postdata();
+        ?>
+        <nav>
+            <ul>
+                <?php
+                wp_list_pages(array(
+                    'depth' => 1,
+                    'child_of' => PAGE_SERVICES,
+                    'title_li' => '',
+                ));
+                ?>
+            </ul>
+        </nav>
     </div>
 </div>
 

@@ -37,8 +37,8 @@ if (defined('ENV_SHOW_ANALYTICS') && ENV_SHOW_ANALYTICS) {
     <div class="container">
         <div class="col-sm-12 pull-right hidden-print">
             <ul>
-                <li><a href="http://www.cmelearning.com/" target="_blank">CM Elearning</a></li>
-                <li><a href="<?php echo get_permalink( 14 ); ?>">Get Updates</a></li>
+                <li><a rel="external" href="<?php the_ext('cmelearning'); ?>">CM Elearning</a></li>
+                <li><a href="<?php echo get_permalink(PAGE_GET_UPDATES); ?>">Get Updates</a></li>
             </ul>
         </div>
     </div>
@@ -56,7 +56,7 @@ if (defined('ENV_SHOW_ANALYTICS') && ENV_SHOW_ANALYTICS) {
                     <span class="icon-bar"></span>
                 </button>
             <a href="/" class="navbar-brand">Critical Measures</a>
-            <div class="tagline">In a world of difference... <span>can you relate?™</span></div>
+            <div class="tagline">In a world of difference... <span>can you relate?&trade;</span></div>
             </div>
             <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
                 <ul class="nav navbar-nav">
