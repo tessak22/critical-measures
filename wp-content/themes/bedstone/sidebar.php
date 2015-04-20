@@ -15,9 +15,7 @@
     </div>
 
     <?php if ($post->ID != PAGE_CONTACT && !is_front_page()) : ?>
-        <div class="cta-contact">
-            <a href="<?php echo get_permalink(PAGE_CONTACT); ?>"><strong>Contact us now</strong> to learn how we can lorem ipsum dolor sit amet elit amet lorem</a>
-        </div>
+        <a class="cta-contact" href="<?php echo get_permalink(PAGE_CONTACT); ?>"><span><strong>Contact us now</strong> to learn how we can lorem ipsum dolor sit amet elit amet lorem</span></a>
     <?php endif; ?>
 
 </aside>
