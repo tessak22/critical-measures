@@ -10,7 +10,7 @@
 
 /**
  * Auto-update settings
- * @link https://codex.wordpress.org/Configuring_Automatic_Background_Updates#Plugin_.26_Theme_Updates_via_Filter
+ * @link https://codex.wordpress.org/Configuring_Automatic_Background_Updates
  */
 add_filter('automatic_updates_is_vcs_checkout', '__return_false', 1);
 add_filter('allow_major_auto_core_updates', '__return_false');
