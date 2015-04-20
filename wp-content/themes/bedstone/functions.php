@@ -5,7 +5,13 @@
  * @package Bedstone
  */
 
+define('PAGE_SERVICES', 9);
 define('PAGE_CONTACT', 12);
+define('PAGE_GET_UPDATES', 14);
+define('PAGE_LEGAL_DISCLAIMER', 15);
+define('PAGE_CROSS_CULTURAL', 16);
+define('PAGE_DIVERSITY_INCLUSION', 17);
+define('PAGE_ANTI_HARASSMENT', 18);
 define('PAGE_LEADERSHIP', 26);
 
 /**
@@ -171,8 +177,8 @@ function get_the_ext($key)
 {
     $arr_ext = array(
         'windmill_design' => 'http://www.windmilldesign.com',
-        'site_documentation' => '',
         // add more items below this point
+        'cmelearning' => 'http://www.cmelearning.com/',
     );
     $link = (array_key_exists($key , $arr_ext)) ? $arr_ext[$key] : '#get_the_ext_error';
     return $link;

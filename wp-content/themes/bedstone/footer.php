@@ -14,7 +14,7 @@
         <div class="copyright">
             &copy;
             <?php echo date('Y'); ?>
-            <?php echo bloginfo('name'); ?>. <span>All Rights Reserved</span> | <a href="#">Legal Disclaimer</a>
+            <?php echo bloginfo('name'); ?>. <span>All Rights Reserved</span> | <a href="<?php echo get_permalink(PAGE_LEGAL_DISCLAIMER); ?>"><?php echo get_the_title(PAGE_LEGAL_DISCLAIMER); ?></a>
         </div>
     </div>
 </footer>
