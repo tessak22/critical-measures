@@ -26,7 +26,7 @@ get_header(); ?>
     <div class="col-md-4 teal">
         <h3><?php the_title(); ?></h3>
         <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" class="btn-default teal">Learn More</a>
+        <a href="<?php the_permalink(); ?>" class="btn-primary teal">Learn More</a>
     </div>
     <?php wp_reset_postdata(); ?>
 
@@ -34,7 +34,7 @@ get_header(); ?>
     <div class="col-md-4 red">
         <h3><?php the_title(); ?></h3>
         <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" class="btn-default red">Learn More</a>
+        <a href="<?php the_permalink(); ?>" class="btn-primary red">Learn More</a>
     </div>
     <?php wp_reset_postdata(); ?>
 
@@ -42,13 +42,13 @@ get_header(); ?>
     <div class="col-md-4 blue">
         <h3><?php the_title(); ?></h3>
         <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" class="btn-default blue">Learn More</a>
+        <a href="<?php the_permalink(); ?>" class="btn-primary blue">Learn More</a>
     </div>
     <?php wp_reset_postdata(); ?>
 </div>
 
-<div class="services row">
-    <div class="col-md-12">
+<div class="services row text-center">
+    <div class="col-sm-10 col-sm-offset-1">
         <?php
             setup_postdata($GLOBALS['post'] =& get_post(PAGE_SERVICES));
             the_excerpt();
