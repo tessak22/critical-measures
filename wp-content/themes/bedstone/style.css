@@ -18,7 +18,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /*Body / Link Overrides*/
 html {font-size: 16px; position: relative; /* for sticky-site-footer */ min-height: 100%; /* for sticky-site-footer */}
-body {font-family: 'Roboto', sans-serif; color: #727c82; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;}
+body {font-family: 'Roboto', sans-serif; color: #727c82; font-size: 16px; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;}
 body {background: url('images/body-content-bg.jpg') no-repeat top center;}
 body.home {background: url('images/body-home-bg.jpg') no-repeat top center;}
 a:focus, a img, input:focus, textarea:focus, button:focus {outline: 0 none;}
@@ -61,7 +61,7 @@ body.home .document-header h1 {border-bottom: none; margin-bottom: 0;}
 
 /*Style Guide / Wysiwyg Content*/
 .content {padding-bottom: 100px; padding-top: 40px;}
-.content p {margin: 0 0 15px;}
+.content p {margin: 0 0 15px; color: #727c82; font-size: 16px; line-height: 26px;}
 .content a {color: #0390b1;}
 .content a:hover {color: #34617a; text-decoration: none;}
 .content a:active {color: #0390b1;}
@@ -85,12 +85,6 @@ body.home .document-header h1 {border-bottom: none; margin-bottom: 0;}
 .article-header {}
 .article-header h1 {}
 .article-header h1 a {}
-
-/*Contextual images*/
-.contextual-image { position: relative; }
-.contextual-image figcaption { position: absolute; bottom: 15px; width: 100%; padding: 0 20px; color: #fefefe; font: italic 300 21px/1.1 'Roboto', sans-serif; text-shadow: 0 0 5px rgba(0, 0, 0, .34); }
-/*Contextual images variant: Leadership children*/
-.parent-pageid-26 .contextual-image { float: right; margin: 0 0 1rem 2rem; }
 
 /*Article Meta & Pagination*/
 .nav-article-meta {}
@@ -176,7 +170,7 @@ body.home .call-to-action a:after {content: "";}
 body.home .call-to-action a:before {content: "\f0da"; font-family: 'FontAwesome'; padding-right: 10px;}
 
 /*Homepage*/
-.focus-areas {overflow: hidden;}
+.focus-areas {overflow: hidden; padding-top: 30px; z-index: 20; position: relative;}
 .focus-areas div {background: url('images/focus-area-box-bg.png') no-repeat; min-height: 350px; background-size: 96%; padding-left: 2px; padding-right: 17px;}
 body.home .content {padding-bottom: 30px;}
 .focus-areas .teal h3 {background: #445a66; font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px;}
@@ -184,7 +178,8 @@ body.home .content {padding-bottom: 30px;}
 .focus-areas .blue h3 {background: #0390b1; font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px;}
 .focus-areas p {padding: 0 35px; margin-top: 20px; margin-bottom: 30px; font-family: 'Roboto Slab', serif; color: #444d52; font-size: 17px; font-weight: 300; line-height: 28px;}
 .focus-areas a {margin: 0 35px;}
-.services {background:url('images/services-bg.png') no-repeat top center; padding-top: 45px; padding-bottom: 45px; font-size: 20px;}
+.site-main {position: relative;}
+.services {background:url('images/services-bg.png') no-repeat top center; padding-top: 45px; padding-bottom: 65px; font-size: 20px; z-index: 20; position: relative;}
 .services p {color: #231f20; font-weight: 300;}
 .services ul {list-style-type: none; width: 755px; margin: 0 auto;}
 .services li {float: left; padding: 0 18px;}
@@ -192,17 +187,44 @@ body.home .content {padding-bottom: 30px;}
 .services a:hover {color: #8e242c;}
 .services ul li a:before {content: "\f18e"; font-family: 'FontAwesome'; padding-right: 8px;}
 
+
+/*Content Pages*/
+/*Contextual images*/
+.contextual-image {position: relative;}
+.contextual-image figcaption {position: absolute; bottom: 30px; left: 10px; width: 100%; padding: 0 20px; color: #fefefe; font: italic 300 21px/1.1 'Roboto', sans-serif; text-shadow: 0 0 5px rgba(0, 0, 0, .34);}
+/*Contextual images variant: Leadership children*/
+.parent-pageid-26 .contextual-image {float: right; margin: 0 0 1rem 2rem;}
+figure.contextual-image img {padding:10px; background: #fff; box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6);}
+figure.contextual-image {margin-bottom: 45px;}
+
+
+/*Contact Us*/
+.contact-us {padding-top: 25px;}
+.offices div:first-child {margin-top: -30px;}
+input.wpcf7-form-control, textarea.wpcf7-form-control {border: 1px solid #d1d1d1;}
+input.wpcf7-text, textarea.wpcf7-textarea {width: 100%; color: #727c82; padding: 12px 10px; font-size: 15px; margin-bottom: 3px;}
+.wpcf7-submit.btn-default {background: #fff; color: #547078; border: 3px solid #c1cbce; border-radius: 0; font-weight: 700; text-transform: uppercase;}
+.wpcf7-submit.btn-default:hover {background: #4c7784; color: #fff; border-color: #4c7784;}
+input.wpcf7-form-control input::-webkit-input-placeholder {color: #727c82; opacity: 1.0;}
+input.wpcf7-form-control input:-moz-placeholder {color: #727c82; opacity: 1.0;}
+input.wpcf7-form-control input::-moz-placeholder {color: #727c82; opacity: 1.0;}
+input.wpcf7-form-control input:-ms-input-placeholder {color: #727c82; opacity: 1.0;}
+
+
 /*Site Footer*/
 body.sticky-site-footer {margin-bottom: 116px; /* match .site-footer height */}
-.site-footer {background: url('images/footer-bg.png') repeat-x; padding-top: 40px; color: #d6cecf;}
+.site-footer {background: url('images/footer-bg.png') repeat-x bottom center; padding-top: 40px; color: #d6cecf; position: relative;}
+.footer-content {position: absolute; bottom: 55px; width: 100%;}
 .copyright a {padding-left: 9px; color: #d6cecf;}
 .copyright span {padding-right: 9px;}
-body.sticky-site-footer .site-footer {height: 116px; position: absolute; bottom: 0; width: 100%;}/* match body.sticky-site-footer margin-bottom */
+body.sticky-site-footer .site-footer {height: 471px; position: absolute; bottom: 0; width: 100%;}/* match body.sticky-site-footer margin-bottom */
 .footer-logos a {text-align: right; float: right; text-indent: 150%; white-space: nowrap; overflow: hidden;}
 .footer-logos a.cme-logo {background: url('images/cme-footer-logo.png') no-repeat; width: 122px; height: 32px; margin-left: 38px;}
 .footer-logos a.cm-logo {background: url('images/cm-footer-logo.png') no-repeat; width: 90px; height: 32px;}
 .footer-logos a.cme-logo:hover {background: url('images/cme-footer-logo-hover.png') no-repeat;}
 .footer-logos a.cm-logo:hover {background: url('images/cm-footer-logo-hover.png') no-repeat;}
+.site-footer {z-index: 0;}
+
 
 /*Retina*/
 @media

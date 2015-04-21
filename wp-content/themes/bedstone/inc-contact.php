@@ -13,7 +13,7 @@ $args = array(
 $query = new WP_Query($args);
 ?>
 
-<div class="row">
+<div class="contact-us row">
     <div class="form-contact col-md-6">
         <?php echo do_shortcode('[contact-form-7 id="39"]'); ?>
     </div>
