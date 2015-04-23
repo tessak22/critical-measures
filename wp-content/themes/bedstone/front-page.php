@@ -20,7 +20,7 @@ get_header(); ?>
     <?php get_sidebar(); ?>
 </div>
 
-<div class="focus-areas">
+<div class="focus-areas row">
 
     <?php setup_postdata($GLOBALS['post'] =& get_post(PAGE_CROSS_CULTURAL)); ?>
     <div class="col-md-4 teal">

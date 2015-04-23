@@ -171,12 +171,13 @@ body.home .call-to-action a:before {content: "\f0da"; font-family: 'FontAwesome'
 
 /*Homepage*/
 .focus-areas {overflow: hidden; padding-top: 30px; z-index: 20; position: relative;}
-.focus-areas div {background: url('images/focus-area-box-bg.png') no-repeat; min-height: 350px; background-size: 96%; padding-left: 2px; padding-right: 17px;}
+.focus-areas div {/*background: url('images/focus-area-box-bg.png') no-repeat; background-size: 96%; */ padding-bottom: 80px;}
 body.home .content {padding-bottom: 30px;}
-.focus-areas .teal h3 {background: #445a66; font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px;}
-.focus-areas .red h3 {background: #d3313a; font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px;}
-.focus-areas .blue h3 {background: #0390b1; font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px;}
-.focus-areas p {padding: 0 35px; margin-top: 20px; margin-bottom: 30px; font-family: 'Roboto Slab', serif; color: #444d52; font-size: 17px; font-weight: 300; line-height: 28px;}
+.focus-areas h3 {font-family: 'Roboto Slab', serif;  color: #fff; font-size: 17px; margin-top: 0; padding: 15px 0 15px 30px; margin-bottom: 0;}
+.focus-areas .teal h3 {background: #445a66;}
+.focus-areas .red h3 {background: #d3313a;}
+.focus-areas .blue h3 {background: #0390b1;}
+.focus-areas p {padding: 0 35px; padding-top: 20px; margin-bottom: 30px; font-family: 'Roboto Slab', serif; color: #444d52; font-size: 17px; font-weight: 300; line-height: 28px; background: #fff;}
 .focus-areas a {margin: 0 35px;}
 .site-main {position: relative;}
 .services {background:url('images/services-bg.png') no-repeat top center; padding-top: 45px; padding-bottom: 65px; font-size: 20px; z-index: 20; position: relative;}
