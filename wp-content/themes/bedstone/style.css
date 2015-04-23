@@ -26,6 +26,7 @@ a.click-to-call, a.click-to-call:visited, a.click-to-call:hover, a.click-to-call
 a {color: #0390b1; transition: all 0.25s ease;}
 a:hover {color: #34617a; text-decoration: none;}
 a:active {color: #0390b1;}
+h1, h2, h3 {margin-top: 30px;}
 ::-webkit-selection {background: #D3313A; color: #FFF; text-shadow: none;}
 ::-moz-selection    {background: #D3313A; color: #FFF; text-shadow: none;}
 ::selection         {background: #D3313A; color: #FFF; text-shadow: none;}
@@ -42,9 +43,9 @@ a:active {color: #0390b1;}
 .nav-secondary ul {list-style: none; padding: 0; padding-right: 15px;}
 .nav-secondary li {display: inline-block;}
 .nav-secondary li:first-child {padding-right: 13px;}
-.nav-secondary li:first-child:after {content: " "; width: 2px; height: 12px; background: #656f75; position: absolute; top: 5px; margin-left: 13px;}
+.nav-secondary li:first-child:after {content: " "; width: 2px; height: 10px; background: #656f75; position: absolute; top: 8px; margin-left: 13px;}
 .nav-secondary li:last-child {padding-left: 13px;}
-.nav-secondary li a {color: #656f75; font-weight: bold; text-transform: uppercase; transition: color 0.25s ease;}
+.nav-secondary li a {color: #656f75; font-weight: bold; text-transform: uppercase; transition: color 0.25s ease; font-size: 12px;}
 .nav-secondary li a:hover {color: #231f20; text-decoration: none;}
 
 /*Breadcrumbs*/
@@ -56,11 +57,10 @@ a:active {color: #0390b1;}
 .nav-breadcrumbs li a {}
 
 /*Document Header / Page Title*/
-.document-header h1 {font-family: 'Roboto Slab', serif; color: #353f42; font-size: 55px; font-weight: 300; line-height: 65px; border-bottom: 1px solid #c8cacb; padding-bottom: 30px; margin-bottom: 40px;}
-body.home .document-header h1 {border-bottom: none; margin-bottom: 0;}
+.document-header h1 {font-family: 'Roboto Slab', serif; color: #353f42; font-size: 55px; font-weight: 300; line-height: 65px; border-bottom: 1px solid #c8cacb; padding-bottom: 30px; margin-bottom: 20px;}
 
 /*Style Guide / Wysiwyg Content*/
-.content {padding-bottom: 100px; padding-top: 40px;}
+.content {padding-bottom: 100px; padding-top: 40px; z-index: 20;}
 .content p {margin: 0 0 15px; color: #727c82; font-size: 16px; line-height: 26px;}
 .content a {color: #0390b1;}
 .content a:hover {color: #34617a; text-decoration: none;}
@@ -69,7 +69,7 @@ body.home .document-header h1 {border-bottom: none; margin-bottom: 0;}
 .content li {}
 .content h2 {color: #364d54; font-size: 24px; font-weight: bold; line-height: 36px;}
 .content h3 {color: #727c82; font-size: 16px; font-weight: bold; line-height: 20px;}
-.content .callout {color: #444d52; font-size: 22px; font-weight: 300; font-family: 'Roboto Slab', serif; line-height: 36px; margin-bottom: 30px;}
+.content .callout {color: #444d52; font-size: 22px; font-weight: 300; font-family: 'Roboto Slab', serif; line-height: 36px; margin-bottom: 30px; padding-top: 20px;}
 .content .callout a {color: #0390b1;}
 .content .callout a:hover {color: #34617a; transition: color 0.25s ease;}
 .content .callout a:active {color: #0390b1;}
@@ -124,8 +124,8 @@ body.home .document-header h1 {border-bottom: none; margin-bottom: 0;}
 .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {margin-right: -15px;}
 .navbar-default {border: none; background: transparent; border-radius: 0;}
 .navbar-collapse {padding-right: 0;}
-.navbar-default .navbar-nav > li > a {color: #831117; font-weight: bold; border-bottom: 5px solid transparent; padding: 25px 15px; background: transparent; transition: color 0.25s ease, background 0.25s ease;}
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-nav > li:hover > a {color: #d3313a; border-bottom: 5px solid #d3313a; 
+.navbar-default .navbar-nav > li > a {color: #831117; font-weight: bold; border-bottom: 5px solid transparent; padding: 23px 15px; background: transparent; transition: color 0.25s ease, background 0.25s ease;}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-nav > li:hover > a, .navbar-nav > li.current_page_parent > a  {color: #d3313a; border-bottom: 5px solid #d3313a; 
     background: rgb(255,255,255);
     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(234,238,239,1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(234,238,239,1)));
@@ -153,7 +153,7 @@ body.home .document-header h1 {border-bottom: none; margin-bottom: 0;}
 .btn-primary.blue:hover {background: #0390b1; color: #fff;}
 
 /*Sidebar*/
-.sidebar {padding-top: 55px;}
+.sidebar {padding-top: 85px;}
 .cta-cmelearning {background: url('images/sidebar-box-bg.png') no-repeat; height: 266px; box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.6); padding: 37px 40px 30px 43px;}
 .cta-cmelearning img {padding-bottom: 20px;}
 .cta-cmelearning p {margin-bottom: 15px; line-height: 28px;}
@@ -186,6 +186,8 @@ body.home .content {padding-bottom: 30px;}
 .services a {color: #d3313a;}
 .services a:hover {color: #8e242c;}
 .services ul li a:before {content: "\f18e"; font-family: 'FontAwesome'; padding-right: 8px;}
+body.home .document-header h1 {border-bottom: none; margin-bottom: 0; font-size: 52px; padding-bottom: 20px;}
+body.home p.callout {width: 90%; font-size: 18px; line-height: 36px; padding-top: 0;}
 
 
 /*Content Pages*/
@@ -194,8 +196,8 @@ body.home .content {padding-bottom: 30px;}
 .contextual-image figcaption {position: absolute; bottom: 30px; left: 10px; width: 100%; padding: 0 20px; color: #fefefe; font: italic 300 21px/1.1 'Roboto', sans-serif; text-shadow: 0 0 5px rgba(0, 0, 0, .34);}
 /*Contextual images variant: Leadership children*/
 .parent-pageid-26 .contextual-image {float: right; margin: 0 0 1rem 2rem;}
-figure.contextual-image img {padding:10px; background: #fff; box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6);}
-figure.contextual-image {margin-bottom: 45px;}
+figure.contextual-image img {padding: 10px; background: rgba(255,255,255,.5); box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6);}
+figure.contextual-image {margin-bottom: 15px;}
 
 
 /*Contact Us*/
@@ -215,6 +217,7 @@ input.wpcf7-form-control input:-ms-input-placeholder {color: #727c82; opacity: 1
 body.sticky-site-footer {margin-bottom: 116px; /* match .site-footer height */}
 .site-footer {background: url('images/footer-bg.png') repeat-x bottom center; padding-top: 40px; color: #d6cecf; position: relative;}
 .footer-content {position: absolute; bottom: 55px; width: 100%;}
+.copyright {font-size: 14px; padding-top: 5px;}
 .copyright a {padding-left: 9px; color: #d6cecf;}
 .copyright span {padding-right: 9px;}
 body.sticky-site-footer .site-footer {height: 471px; position: absolute; bottom: 0; width: 100%;}/* match body.sticky-site-footer margin-bottom */
