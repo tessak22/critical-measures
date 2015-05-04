@@ -23,26 +23,32 @@ get_header(); ?>
 <div class="focus-areas row">
 
     <?php setup_postdata($GLOBALS['post'] =& get_post(PAGE_CROSS_CULTURAL)); ?>
-    <div class="col-md-4 teal">
-        <h3><?php the_title(); ?></h3>
-        <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" class="btn-primary teal">Learn More</a>
+    <div class="col-md-4">
+        <div class="tealbox">
+            <h3><?php the_title(); ?></h3>
+            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>" class="btn-primary teal">Learn More</a>
+        </div>
     </div>
     <?php wp_reset_postdata(); ?>
 
     <?php setup_postdata($GLOBALS['post'] =& get_post(PAGE_DIVERSITY_INCLUSION)); ?>
-    <div class="col-md-4 red">
-        <h3><?php the_title(); ?></h3>
-        <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" class="btn-primary red">Learn More</a>
+    <div class="col-md-4">
+        <div class="redbox">
+            <h3><?php the_title(); ?></h3>
+            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>" class="btn-primary red">Learn More</a>
+        </div>
     </div>
     <?php wp_reset_postdata(); ?>
 
     <?php setup_postdata($GLOBALS['post'] =& get_post(PAGE_ANTI_HARASSMENT)); ?>
-    <div class="col-md-4 blue">
-        <h3><?php the_title(); ?></h3>
-        <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" class="btn-primary blue">Learn More</a>
+    <div class="col-md-4">
+        <div class="bluebox">
+            <h3><?php the_title(); ?></h3>
+            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>" class="btn-primary blue">Learn More</a>
+        </div>
     </div>
     <?php wp_reset_postdata(); ?>
 </div>
