@@ -13,6 +13,7 @@ define('PAGE_CROSS_CULTURAL', 16);
 define('PAGE_DIVERSITY_INCLUSION', 17);
 define('PAGE_ANTI_HARASSMENT', 18);
 define('PAGE_LEADERSHIP', 26);
+define('ABOUT_US', 10);
 
 /**
  * load theme defaults
