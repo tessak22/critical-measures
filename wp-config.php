@@ -153,7 +153,7 @@ $env_hosts = array(
     // do not include http:// prefix
     'LIVE'        => 'your_LIVE_domain_here',
     'STAGING'     => 'your_STAGING_domain_here',
-    'PREVIEW'     => 'your_PREVIEW_domain_here',
+    'PREVIEW'     => 'cm.windmilldesignworks.com',
     'DEVELOPMENT' => 'cm-dev.windmilldesignworks.com'
 );
 
@@ -168,6 +168,9 @@ if (($server_env && 'LIVE' == $server_env) || $server_host == $env_hosts['LIVE']
         // set STAGING variations
     } elseif (($server_env && 'PREVIEW' == $server_env) || $server_host == $env_hosts['PREVIEW']) {
         // set PREVIEW variations
+        $env[ 'DB_NAME' ] = 'windmill_cm-proof';
+        $env[ 'DB_USER' ] = 'windmill_admin';
+        $env[ 'DB_PASSWORD' ] = 'ch3wy';
     } elseif (($server_env && 'DEVELOPMENT' == $server_env) || $server_host == $env_hosts['DEVELOPMENT']) {
         // set DEVELOPMENT variations
         $env[ 'DB_NAME' ] = 'windmill_cm';

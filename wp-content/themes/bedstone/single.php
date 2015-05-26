@@ -19,12 +19,6 @@ get_header(); ?>
             }
         ?>
 
-        <?php if ('post' == get_post_type()) : ?>
-            <footer class="article-footer">
-                <?php get_template_part('nav', 'posts'); ?>
-            </footer>
-        <?php endif; ?>
-
     </div>
     <?php get_sidebar(); ?>
 </div>

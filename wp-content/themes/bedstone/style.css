@@ -89,10 +89,11 @@ h1, h2, h3 {margin-top: 30px;}
 /*Article Meta & Pagination*/
 .nav-article-meta {}
 .nav-article-meta ul {list-style: none; padding: 0;}
-.nav-article-meta li {display: inline;}
+.nav-article-meta li {display: inline; color: #a4aeb4; font-size: 13px;}
 .nav-article-meta li:before {content: '\00a0\2013\00a0'; /* &ndash; */}
 .nav-article-meta li:first-child:before {content: '';}
-.nav-article-meta li a {}
+.nav-article-meta li a {font-size: 12px; font-weight: 800; color: #a4aeb4; text-transform: uppercase;}
+.nav-article-meta li a:hover {color: #0390b1;}
 .nav-prevnext {overflow: hidden; margin: .5rem 0;}
 .nav-prevnext ul {list-style: none; padding: 0;}
 .nav-prevnext li {width: 40%; float: left;}
@@ -206,7 +207,7 @@ figure.contextual-image {margin-bottom: 15px;}
 .contact-us {padding-top: 25px;}
 .offices div:first-child {margin-top: -30px;}
 input.wpcf7-form-control, textarea.wpcf7-form-control {border: 1px solid #d1d1d1;}
-input.wpcf7-text, textarea.wpcf7-textarea {width: 100%; color: #727c82; padding: 12px 10px; font-size: 15px; margin-bottom: 3px;}
+input.wpcf7-text, textarea.wpcf7-textarea {width: 100%; color: #727c82; padding: 8px 10px; font-size: 15px; margin-bottom: 3px;}
 .wpcf7-submit.btn-default {background: #fff; color: #547078; border: 3px solid #c1cbce; border-radius: 0; font-weight: 700; text-transform: uppercase;}
 .wpcf7-submit.btn-default:hover {background: #4c7784; color: #fff; border-color: #4c7784;}
 input.wpcf7-form-control input::-webkit-input-placeholder {color: #727c82; opacity: 1.0;}
@@ -214,6 +215,18 @@ input.wpcf7-form-control input:-moz-placeholder {color: #727c82; opacity: 1.0;}
 input.wpcf7-form-control input::-moz-placeholder {color: #727c82; opacity: 1.0;}
 input.wpcf7-form-control input:-ms-input-placeholder {color: #727c82; opacity: 1.0;}
 
+/*Leadership*/
+.leadership-bios figure.headshot img {padding: 6px; background: rgba(255,255,255,.5); box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6); max-width: 100%; height: auto;}
+.leadership-bios .bio-item {margin-bottom: 55px;}
+.leadership-bios .bio-item h2 {margin-top: 0;}
+.leadership-bios .bio-item h5 {color: #a4aeb4; font-size: 12px; font-weight: 800; text-transform: uppercase;}
+h5.bio {font-family: 'Roboto Slab'; font-weight: 300; font-size: 22px; color: #444d52; margin-bottom: 30px; margin-top: 30px;}
+
+/*Resources*/
+.blog-thumb img {max-width: 100%; height: auto; margin-top: 10px; padding: 6px; background: rgba(255,255,255,.5); box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6);}
+.blog-content h2 {margin-top: 0; margin-bottom: 0;}
+article.post figure.contextual-image {float: right; margin-left: 30px;}
+.content-list article {padding-bottom: 25px;}
 
 /*Site Footer*/
 body.sticky-site-footer {margin-bottom: 116px; /* match .site-footer height */}

@@ -20,6 +20,10 @@
         ?>
     </header>
 
+    <?php if(get_field('leadership_job_title_position')): ?>
+        <h5 class="bio"><?php the_field('leadership_job_title_position'); ?></h5>
+    <?php endif; ?>
+
     <?php if (has_post_thumbnail()) : ?>
         <figure class="contextual-image">
             <?php
@@ -36,8 +40,8 @@
     <?php endif; ?>
 
     <?php
-    the_content();
-    get_template_part('variant', 'after-content');
+        the_content();
+        get_template_part('variant', 'after-content');
     ?>
 
     <?php comments_template(); ?>
