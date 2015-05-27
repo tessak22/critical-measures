@@ -14,3 +14,7 @@ if (PAGE_LEADERSHIP == $post->ID) {
 if (ABOUT_US == $post->ID) {
     get_template_part('inc', 'about');
 }
+
+if (GET_UPDATES == $post->ID) {
+    get_template_part('inc', 'updates');
+}

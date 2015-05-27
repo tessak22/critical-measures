@@ -14,6 +14,7 @@ define('PAGE_DIVERSITY_INCLUSION', 17);
 define('PAGE_ANTI_HARASSMENT', 18);
 define('PAGE_LEADERSHIP', 26);
 define('ABOUT_US', 10);
+define('GET_UPDATES', 14);
 
 /**
  * load theme defaults

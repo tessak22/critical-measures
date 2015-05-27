@@ -228,6 +228,11 @@ h5.bio {font-family: 'Roboto Slab'; font-weight: 300; font-size: 22px; color: #4
 article.post figure.contextual-image {float: right; margin-left: 30px;}
 .content-list article {padding-bottom: 25px;}
 
+/*Get Updates Form*/
+.indicates-required {padding-bottom: 30px;}
+.mc-field-group {padding-bottom: 20px;}
+.mc-field-group input {width: 80%;}
+
 /*Site Footer*/
 body.sticky-site-footer {margin-bottom: 116px; /* match .site-footer height */}
 .site-footer {background: url('images/footer-bg.png') repeat-x bottom center; padding-top: 40px; color: #d6cecf; position: relative;}
