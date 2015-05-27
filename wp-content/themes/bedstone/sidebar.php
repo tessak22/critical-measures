@@ -15,7 +15,7 @@
     </div>
 
     <?php if ($post->ID != PAGE_CONTACT && !is_front_page()) : ?>
-        <a class="cta-contact" href="<?php echo get_permalink(PAGE_CONTACT); ?>"><span><strong>Contact us now</strong> to learn how we can lorem ipsum dolor sit amet elit amet lorem</span></a>
+        <a class="cta-contact" href="<?php echo get_permalink(PAGE_CONTACT); ?>"><span><strong>Contact us now</strong> <?php if(function_exists('show_text_block')) { echo show_text_block('contact-us-now-sidebar-intro-text', true); } ?></span></a>
     <?php endif; ?>
 
 </aside>
