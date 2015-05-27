@@ -10,7 +10,7 @@
 
     <div class="cta-cmelearning">
         <img src="<?php bloginfo('template_directory'); ?>/images/cm-elearning-logo.png" alt="CM Elearning">
-        <p>Intro to CM Elearning here pretium lacus id lorem auctor, id gravida felis ultrices. Pretium lacus id lorem auctor.</p>
+        <p><?php if(function_exists('show_text_block')) { echo show_text_block('cm-elearning-sidebar-text', true); } ?></p>
         <a href="<?php the_ext('cmelearning'); ?>" class="btn btn-primary">Visit cmelearning.com</a>
     </div>
 
