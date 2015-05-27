@@ -143,7 +143,7 @@ $env['WP_HOME'] = 'http://' . $server_host;
 $env['WP_SITEURL'] = 'http://' . $server_host;
 $env['WP_POST_REVISIONS'] = 2;
 $env['ENV_SHOW_ANALYTICS'] = true;
-$env['DOCUMENTATION_LINK'] = '';
+$env['DOCUMENTATION_LINK'] = 'https://docs.google.com/document/d/16irtLV7ZOJ02nVAmLGcWl3nyvdRkJ-GgJa0XRRqbTkw/';
 $env['SYMLINK_ROBOTS'] = array(__DIR__ . '/robots-live.txt', __DIR__ . '/robots.txt');
 
 /**

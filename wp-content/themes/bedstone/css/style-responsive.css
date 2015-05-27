@@ -8,12 +8,26 @@
     html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
     body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
     body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+    .navbar-header {width: 35%;}
+    .tagline {display: none;}
+    .cta-cmelearning {background: rgba(255,255,255,.70); height: auto;}
+    .cta-contact span {font-size: 16px;}
+    .cta-contact {padding: 10px 25px;}
 }
 
 @media only screen and (max-width: 991px) {
     html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
     body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
     body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+    .offices {padding-top: 20px;}
+    .navbar-default .navbar-nav > li > a {padding: 24px 9px; font-size: 14px;}
+    .services ul {margin: 0; width: 100%; padding-left: 0;}
+    .services li {float: none;}
+    .cta-contact {width: 370px;}
+    .footer-content {bottom: auto;}
+    .sidebar {padding-top: 0; padding-bottom: 30px;}
+    .content {padding-bottom: 40px;}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -22,10 +36,22 @@
     body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
     .dropdown-menu.bedstone-bootstrap-hover-dropdown { display: block; float: none; position: relative; }
     .dropdown-menu {box-shadow: none; border: none;}
+    .navbar-header {width: 100%;}
+    .footer-logos {float: left !important; padding-top: 10px;}
+    .navbar-collapse {width: 100%; margin-top: 14px; box-shadow: none; border: none; overflow: hidden;}
+    .navbar-default {background: #fff;}
+    .nav > li {width: 93%;}
+    .navbar-default .navbar-nav > li > a:hover {background: #fff;}
+    .navbar-default .navbar-nav > li > a {padding: 10px 9px; font-size: 16px;}
+    .dropdown-menu > li > a {white-space: normal;}
 }
 
 @media only screen and (max-width: 480px) {
     html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
     body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
     body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+    .cta-contact {width: 100%; max-width: 370px;}
+    .footer-content {top: 20px;}
+    body.home .document-header h1 {font-size: 40px; line-height: 50px;}
+    .navbar-toggle {margin-right: 0;}
 }
