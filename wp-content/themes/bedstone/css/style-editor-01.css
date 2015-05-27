@@ -23,6 +23,13 @@ body#tinymce.wp-editor h3 {
 
 */
 
-body#tinymce.wp-editor {
-
-}
+body#tinymce.wp-editor {}
+body#tinymce.wp-editor h2 {color: #364d54; font-size: 24px; font-weight: bold; line-height: 36px;}
+body#tinymce.wp-editor h3 {color: #727c82; font-size: 16px; font-weight: bold; line-height: 20px; margin-top: 0;}
+body#tinymce.wp-editor .callout {color: #1F2426; font-size: 22px; font-weight: 300; line-height: 36px; margin-bottom: 30px; padding-top: 20px;}
+body#tinymce.wp-editor .callout a {color: #0390b1;}
+body#tinymce.wp-editor .callout a:active {color: #0390b1;}
+body#tinymce.wp-editor .footnote {font-size: 15px; font-style: italic; line-height: 22px;}
+body#tinymce.wp-editor .call-to-action {font-size: 18px; font-weight: bold; line-height: 22px;}
+body#tinymce.wp-editor .call-to-action a:after {content: "»"; padding-left: 5px;}
+body#tinymce.wp-editor .call-to-action a:after, .content .call-to-action a:after:visited, .content .call-to-action a:after:hover, .content .call-to-action a:after:active {}
