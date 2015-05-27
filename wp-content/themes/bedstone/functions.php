@@ -164,7 +164,7 @@ function add_style_formats($init)
 //add_action('init', 'do_add_editor_styles');
 function do_add_editor_styles()
 {
-    add_editor_style('css/style-editor-01.css'); // cached, update revision as needed
+    add_editor_style('css/style-editor-02.css'); // cached, update revision as needed
 }
 
 /**
