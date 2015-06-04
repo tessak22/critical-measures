@@ -20,7 +20,7 @@
     body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
     body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
     .offices {padding-top: 20px;}
-    .navbar-default .navbar-nav > li > a {padding: 24px 9px; font-size: 14px;}
+    .navbar-default .navbar-nav > li > a {padding: 22px 15px 25px; font-size: 14px;}
     .services ul {margin: 0; width: 100%; padding-left: 0;}
     .services li {float: none;}
     .cta-contact {width: 370px;}
