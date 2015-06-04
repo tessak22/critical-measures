@@ -18,11 +18,11 @@ $query = new WP_Query($args);
     <?php while ($query->have_posts()) : $query->the_post(); $fields = (object) get_fields(); ?>
         <div class="bio-item row">
             <?php if (has_post_thumbnail()) : ?>
-                <figure class="headshot col-md-4">
+                <figure class="headshot">
                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
                 </figure>
             <?php endif; ?>
-            <div class="col-md-<?php echo (has_post_thumbnail()) ? '8' : '12'; ?>">
+            <div class="bio-content">
                 <h2><?php the_title(); ?></h2>
                 <h5><?php the_field('leadership_job_title_position'); ?></h5>
                 <?php the_excerpt(); ?>
