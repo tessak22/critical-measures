@@ -221,6 +221,7 @@ input.wpcf7-form-control input:-ms-input-placeholder {color: #727c82; opacity: 1
 .leadership-bios .bio-item h2 {margin-top: 0;}
 .leadership-bios .bio-item h5 {color: #a4aeb4; font-size: 12px; font-weight: 800; text-transform: uppercase;}
 h5.bio {font-family: 'Roboto Slab'; font-weight: 300; font-size: 22px; color: #444d52; margin-bottom: 30px; margin-top: 30px;}
+figure.headshot {float: left; margin-right: 20px;}
 
 /*Resources*/
 .blog-thumb img {max-width: 100%; height: auto; margin-top: 10px; padding: 6px; background: rgba(255,255,255,.5); box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6);}
