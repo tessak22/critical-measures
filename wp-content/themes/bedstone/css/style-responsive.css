@@ -54,4 +54,5 @@
     .footer-content {top: 20px;}
     body.home .document-header h1 {font-size: 40px; line-height: 50px;}
     .navbar-toggle {margin-right: 0;}
+    .contextual-image figcaption {bottom: 0; color: #1f2426; padding: 15px 0 0; text-shadow: none; position: relative;}
 }
