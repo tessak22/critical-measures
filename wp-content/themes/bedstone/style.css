@@ -196,7 +196,7 @@ body.home p.callout {width: 90%; font-size: 18px; line-height: 36px; padding-top
 /*Content Pages*/
 /*Contextual images*/
 .contextual-image {position: relative;}
-.contextual-image figcaption {position: absolute; bottom: 30px; left: 10px; width: 100%; padding: 0 20px; color: #fefefe; font: italic 300 21px/1.1 'Roboto', sans-serif; text-shadow: 0 0 5px rgba(0, 0, 0, .34);}
+.contextual-image figcaption {position: absolute; bottom: 30px; left: 10px; width: 100%; padding: 0 24px; color: #fefefe; font: italic 300 21px/1.1 'Roboto', sans-serif; text-shadow: 0 0 5px rgba(0, 0, 0, .34);}
 /*Contextual images variant: Leadership children*/
 .parent-pageid-26 .contextual-image {float: right; margin: 0 0 1rem 2rem;}
 figure.contextual-image img {padding: 10px; background: rgba(255,255,255,.5); box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6);}
