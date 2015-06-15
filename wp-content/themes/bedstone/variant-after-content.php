@@ -18,3 +18,7 @@ if (ABOUT_US == $post->ID) {
 if (GET_UPDATES == $post->ID) {
     get_template_part('inc', 'updates');
 }
+
+if (PAGE_FOCUS_AREAS == $post->ID) {
+    get_template_part('inc', 'focus-areas');
+}

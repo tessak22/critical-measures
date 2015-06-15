@@ -5,6 +5,7 @@
  * @package Bedstone
  */
 
+define('PAGE_FOCUS_AREAS', 8);
 define('PAGE_SERVICES', 9);
 define('PAGE_CONTACT', 12);
 define('PAGE_GET_UPDATES', 14);
