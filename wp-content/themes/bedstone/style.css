@@ -66,7 +66,7 @@ h1, h2, h3 {margin-top: 30px;}
 .content a:hover {color: #34617a; text-decoration: none;}
 .content a:active {color: #0390b1;}
 .content ul ul, .content ul ol, .content ol ul, .content ol ol {padding-left: 35px; list-style-type: disc;}
-.content li {}
+.content li {line-height: 26px; padding: 5px 0;}
 .content h2 {color: #364d54; font-size: 24px; font-weight: bold; line-height: 36px;}
 .content h3 {color: #727c82; font-size: 16px; font-weight: bold; line-height: 20px; margin-top: 0;}
 .content .callout {color: #1F2426; font-size: 22px; font-weight: 300; font-family: 'Roboto Slab', serif; line-height: 36px; margin-bottom: 30px; padding-top: 20px;}
@@ -155,7 +155,7 @@ h1, h2, h3 {margin-top: 30px;}
 
 /*Sidebar*/
 .sidebar {padding-top: 85px;}
-.cta-cmelearning {background: url('images/sidebar-box-bg.png') no-repeat; height: 266px; box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.3); padding: 37px 40px 30px 43px;}
+.cta-cmelearning {background: rgba(255,255,255,.70); height: auto; box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.3); padding: 37px 40px 30px 43px;}
 .cta-cmelearning img {padding-bottom: 20px;}
 .cta-cmelearning p {margin-bottom: 15px; line-height: 28px;}
 .cta-cmelearning a.btn-primary {border-bottom: 2px solid #4d636f; text-transform: none; font-size: 13px; background: #0390b1; color: #fff; padding: 13px 19px 13px 14px;}
