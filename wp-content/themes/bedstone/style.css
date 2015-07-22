@@ -125,7 +125,7 @@ h1, h2, h3 {margin-top: 30px;}
 .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {margin-right: -15px;}
 .navbar-default {border: none; background: transparent; border-radius: 0;}
 .navbar-collapse {padding-right: 0;}
-.navbar-default .navbar-nav > li > a {color: #831117; font-weight: bold; border-bottom: 5px solid transparent; padding: 24px 15px; background: transparent; transition: color 0.25s ease, background 0.25s ease;}
+.navbar-default .navbar-nav > li > a {color: #831117; font-weight: bold; border-bottom: 5px solid transparent; padding: 21px 15px 26px; background: transparent; transition: color 0.25s ease, background 0.25s ease;}
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-nav > li:hover > a, .navbar-nav > li.current_page_parent > a  {color: #d3313a; border-bottom: 5px solid #d3313a;
     background: rgb(255,255,255);
     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(234,238,239,1) 100%);
@@ -155,7 +155,7 @@ h1, h2, h3 {margin-top: 30px;}
 
 /*Sidebar*/
 .sidebar {padding-top: 85px;}
-.cta-cmelearning {background: rgba(255,255,255,.70); height: auto; box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.3); padding: 37px 40px 30px 43px;}
+.cta-cmelearning {background: rgba(255,255,255,.70); height: auto; box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.3); padding: 37px 38px 30px 38px;}
 .cta-cmelearning img {padding-bottom: 20px;}
 .cta-cmelearning p {margin-bottom: 15px; line-height: 28px;}
 .cta-cmelearning a.btn-primary {border-bottom: 2px solid #4d636f; text-transform: none; font-size: 13px; background: #0390b1; color: #fff; padding: 13px 19px 13px 14px;}
@@ -179,8 +179,8 @@ body.home .content {padding-bottom: 30px;}
 .focus-areas .tealbox h3 {background: #445a66;}
 .focus-areas .redbox h3 {background: #d3313a;}
 .focus-areas .bluebox h3 {background: #0390b1;}
-.focus-areas p {padding: 0 35px; padding-top: 20px; margin-bottom: 30px; font-family: 'Roboto Slab', serif; color: #444d52; font-size: 17px; font-weight: 300; line-height: 28px; background: #fff;}
-.focus-areas a {margin: 0 35px;}
+.focus-areas p {padding: 0 27px; padding-top: 20px; margin-bottom: 30px; font-family: 'Roboto Slab', serif; color: #444d52; font-size: 17px; font-weight: 300; line-height: 28px; background: #fff;}
+.focus-areas a {margin: 0 27px;}
 .site-main {position: relative;}
 .services {background:url('images/services-bg.png') no-repeat top center; padding-top: 45px; padding-bottom: 65px; font-size: 20px; z-index: 20; position: relative;}
 .services p {color: #231f20; font-weight: 300;}
