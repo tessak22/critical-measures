@@ -158,7 +158,9 @@ $env_hosts = array(
 );
 
 if (($server_env && 'LIVE' == $server_env) || $server_host == $env_hosts['LIVE']) {
-    // set LIVE variations, although it is recommended that all LIVE settings are simply used as the defaults
+        $env[ 'DB_NAME' ] = 'critical_main';
+        $env[ 'DB_USER' ] = 'critical_admin';
+        $env[ 'DB_PASSWORD' ] = 'taDTfNzt,aW*';
 } else {
     // set all non-LIVE variations
     $env['ENV_SHOW_ANALYTICS'] = false;
