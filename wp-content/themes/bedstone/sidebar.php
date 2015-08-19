@@ -6,30 +6,16 @@
  */
 ?>
 
-<aside class="sidebar col-md-3" role="complementary">
+<aside class="sidebar col-md-4" role="complementary">
 
-    <nav class="nav-categories hidden-print">
-        <h4>Categories</h4>
-        <ul>
-            <?php wp_list_categories('title_li='); ?>
-        </ul>
-    </nav>
-
-    <div class="contact-information" itemscope itemtype="http://schema.org/LocalBusiness">
-        <h4 itemprop="name"><?php bloginfo('name'); ?></h4>
-        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">1227 Tyler St NE Ste 180</span>
-            <br>
-            <span itemprop="addressLocality">Minneapolis</span>,
-            <span itemprop="addressRegion">MN</span> <span itemprop="postalCode">55413</span>
-        </address>
-        <h4>Phone: <span itemprop="telephone">612-521-4286</span></h4>
-        Fax: <span itemprop="faxNumber">866-835-2033</span>
-        <br>
-        Email: <a itemprop="email" href="mailto:hello@windmilldesign.com">hello@windmilldesign.com</a>
-        <div class="visible-print-block">
-            <span itemprop="url">http://www.windmilldesign.com</span>
-        </div>
+    <div class="cta-cmelearning">
+        <img src="<?php bloginfo('template_directory'); ?>/images/cm-elearning-logo.png" alt="CM Elearning">
+        <p><?php if(function_exists('show_text_block')) { echo show_text_block('cm-elearning-sidebar-text', true); } ?></p>
+        <a href="<?php the_ext('cmelearning'); ?>" class="btn btn-primary">Visit cmelearning.com</a>
     </div>
+
+    <?php if ($post->ID != PAGE_CONTACT && !is_front_page()) : ?>
+        <a class="cta-contact" href="<?php echo get_permalink(PAGE_CONTACT); ?>"><span><strong>Contact us now</strong> <?php if(function_exists('show_text_block')) { echo show_text_block('contact-us-now-sidebar-intro-text', true); } ?></span></a>
+    <?php endif; ?>
 
 </aside>

@@ -5,6 +5,18 @@
  * @package Bedstone
  */
 
+define('PAGE_FOCUS_AREAS', 8);
+define('PAGE_SERVICES', 9);
+define('PAGE_CONTACT', 12);
+define('PAGE_GET_UPDATES', 14);
+define('PAGE_LEGAL_DISCLAIMER', 15);
+define('PAGE_CROSS_CULTURAL', 16);
+define('PAGE_DIVERSITY_INCLUSION', 17);
+define('PAGE_ANTI_HARASSMENT', 18);
+define('PAGE_LEADERSHIP', 26);
+define('ABOUT_US', 10);
+define('GET_UPDATES', 14);
+
 /**
  * load theme defaults
  */
@@ -47,7 +59,7 @@ function custom_theme_setup()
     add_theme_support('automatic-feed-links');
     add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
     add_post_type_support('page', array('excerpt'));
-    //add_theme_support('post-thumbnails');
+    add_theme_support('post-thumbnails');
 }
 
 /**
@@ -58,7 +70,7 @@ function custom_enqueue_scripts() {
     $id = get_the_ID(); // use for testing page-specific styles and scripts
     // styles
     //wp_enqueue_style('style-name', get_template_directory_uri() . '/css/example.css', array(), '0.1.0');
-    //wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', '4.3.0');
+    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', '4.3.0');
     wp_enqueue_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', array(), '3.3.4');
     wp_enqueue_style('bedstone', get_stylesheet_uri(), array('bootstrap'));
     wp_enqueue_style('bedstone-responsive', get_template_directory_uri() . '/css/style-responsive.css', array('bootstrap', 'bedstone'));
@@ -154,7 +166,7 @@ function add_style_formats($init)
 //add_action('init', 'do_add_editor_styles');
 function do_add_editor_styles()
 {
-    add_editor_style('css/style-editor-01.css'); // cached, update revision as needed
+    add_editor_style('css/style-editor-02.css'); // cached, update revision as needed
 }
 
 /**
@@ -168,8 +180,8 @@ function get_the_ext($key)
 {
     $arr_ext = array(
         'windmill_design' => 'http://www.windmilldesign.com',
-        'site_documentation' => '',
         // add more items below this point
+        'cmelearning' => 'http://www.cmelearning.com/',
     );
     $link = (array_key_exists($key , $arr_ext)) ? $arr_ext[$key] : '#get_the_ext_error';
     return $link;
@@ -182,7 +194,7 @@ function the_ext($key)
 /**
  * [optional] custom post types
  */
-//add_action('init', 'wd_register_custom_post_types', 0);
+add_action('init', 'wd_register_custom_post_types', 0);
 function wd_register_custom_post_types()
 {
     $arr_custom_post_type_options = array(
@@ -195,10 +207,10 @@ function wd_register_custom_post_types()
          ),
          */
         array(
-            'label' => 'staff',
-            'singular' => 'Staff Profile',
-            'plural' => 'Staff Profiles',
-            'supports' => array('title', 'editor', 'custom-fields', 'page-attributes'),
+            'label' => 'offices',
+            'singular' => 'Office',
+            'plural' => 'Offices',
+            'supports' => array('title', 'custom-fields', 'page-attributes'),
         ),
     );
     foreach ($arr_custom_post_type_options as $cpt_opts) {

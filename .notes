@@ -1,10 +1,54 @@
 Hello. Project notes go here.
 
+
+WordPress Core Version
+==
+
+The core for this project is: 4.1
+
+https://wordpress.org/download/release-archive/
+
+
 Downloading WordPress
 ==
 
-curl -O https://wordpress.org/latest.zip
+1. Grab the zip you need for a new build (see 1.a) or match the core version below.
+
+	1.a. For a brand new build  
+	curl -O https://wordpress.org/latest.zip
+	
+	1.b. Match the core version. Replace X.X with the core version for the project.
+	curl -O https://wordpress.org/wordpress-X.X.zip
+
+2. Unzip it
 unzip latest.zip
-cp -r wordpress/ ./
+
+3. Copy files using either the Mac (see 3.a.) or Linux (see 3.b.) command
+
+	3.a. For Mac OS X (BSD): Copy the unzipped WordPress files
+	cp -r wordpress/ ./
+	
+	3.b. For Linux (GNU): Copy the unzipped WordPress files
+	cp -RT wordpress/ ./
+
+4. Remove the zip
 rm latest.zip
+
+5. Remove the unzipped /wordpress/ files
 rm -fr wordpress/
+
+
+Plugins
+==
+
+Advanced Custom Fields
+https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.1.zip
+
+CMS Tree Page View
+https://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.31.zip
+
+Contact Form 7
+https://downloads.wordpress.org/plugin/contact-form-7.4.1.1.zip
+
+Contact Form DB
+https://downloads.wordpress.org/plugin/contact-form-7-to-database-extension.2.8.36.zip

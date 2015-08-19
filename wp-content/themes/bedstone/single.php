@@ -7,18 +7,10 @@
  * @package Bedstone
  */
 
-// get the section title in case this is a blog post
-$posts_section_title = bedstone_get_posts_section_title();
-
 get_header(); ?>
 
-<header class="document-header">
-    <h1><?php echo ($posts_section_title) ? $posts_section_title : get_the_title(); ?></h1>
-    <?php get_template_part('nav', 'breadcrumbs'); ?>
-</header>
-
 <div class="container-columns row">
-    <div class="content col-md-9" role="main">
+    <div class="content col-md-8" role="main">
 
         <?php
             while (have_posts()) {
@@ -26,12 +18,6 @@ get_header(); ?>
                 get_template_part('content');
             }
         ?>
-
-        <?php if ('post' == get_post_type()) : ?>
-            <footer class="article-footer">
-                <?php get_template_part('nav', 'posts'); ?>
-            </footer>
-        <?php endif; ?>
 
     </div>
     <?php get_sidebar(); ?>

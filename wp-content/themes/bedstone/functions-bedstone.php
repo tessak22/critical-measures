@@ -9,6 +9,14 @@
  */
 
 /**
+ * Auto-update settings
+ * @link https://codex.wordpress.org/Configuring_Automatic_Background_Updates
+ */
+add_filter('automatic_updates_is_vcs_checkout', '__return_false', 1);
+add_filter('allow_major_auto_core_updates', '__return_false');
+add_filter('allow_minor_auto_core_updates', '__return_true');
+
+/**
  * Debug helper
  *
  * @param mixed $var To be debugged
