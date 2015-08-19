@@ -34,13 +34,14 @@ h1, h2, h3 {margin-top: 30px;}
 /*Site Logo*/
 .navbar-header {position: relative; width: 50%;}
 .logo {margin: 15px 0;}
-.navbar-brand {background: url('images/logo.png'); width: 186px; height: 58px; text-indent: 150%; white-space: nowrap; overflow: hidden;}
+.navbar-brand {background: url('images/logo.png') no-repeat; width: 186px; height: 58px; text-indent: 150%; white-space: nowrap; overflow: hidden;}
 .tagline {font-family: 'Roboto Slab', serif; color: #231f20; font-size: 17px; font-weight: 300; position: absolute; left: 190px; top: 17px;}
 .tagline span {font-weight: 400;}
 
 /*Nav Secondary*/
+.nav-secondary .col-sm-12 {padding-right: 0;}
 .nav-secondary {text-align: right; position: relative; top: 2px;}
-.nav-secondary ul {list-style: none; padding: 0; padding-right: 15px;}
+.nav-secondary ul {list-style: none; padding: 0;}
 .nav-secondary li {display: inline-block;}
 .nav-secondary li:first-child {padding-right: 13px;}
 .nav-secondary li:first-child:after {content: " "; width: 2px; height: 10px; background: #656f75; position: absolute; top: 8px; margin-left: 13px;}
@@ -66,8 +67,8 @@ h1, h2, h3 {margin-top: 30px;}
 .content a:hover {color: #34617a; text-decoration: none;}
 .content a:active {color: #0390b1;}
 .content ul ul, .content ul ol, .content ol ul, .content ol ol {padding-left: 35px; list-style-type: disc;}
-.content li {line-height: 26px; padding: 5px 0;}
-.content h2 {color: #364d54; font-size: 24px; font-weight: bold; line-height: 36px;}
+.content li {line-height: 18px; padding: 5px 0;}
+.content h2 {color: #364d54; font-size: 24px; font-weight: bold; line-height: 30px;}
 .content h3 {color: #727c82; font-size: 16px; font-weight: bold; line-height: 20px; margin-top: 0;}
 .content .callout {color: #1F2426; font-size: 22px; font-weight: 300; font-family: 'Roboto Slab', serif; line-height: 36px; margin-bottom: 30px; padding-top: 20px;}
 .content .callout a {color: #0390b1;}
@@ -76,7 +77,7 @@ h1, h2, h3 {margin-top: 30px;}
 .content .footnote {font-size: 15px; font-style: italic; line-height: 22px;}
 .content .footnote a {}
 .content .footnote a:visited, .content .footnote a:hover, .content .footnote a:active {}
-.content .call-to-action {font-size: 18px; font-weight: bold; line-height: 19px; margin-bottom: 25px; margin-top: -5px;}
+.content .call-to-action {font-size: 18px; font-weight: bold; line-height: 28px; margin-bottom: 25px; margin-top: -5px;}
 .content .call-to-action a:after {content: "»"; padding-left: 5px;}
 .content .call-to-action a {}
 .content .call-to-action a:hover {}
@@ -127,6 +128,17 @@ h1, h2, h3 {margin-top: 30px;}
 .navbar-collapse {padding-right: 0;}
 .navbar-default .navbar-nav > li > a {color: #831117; font-weight: bold; border-bottom: 5px solid transparent; padding: 21px 15px 26px; background: transparent; transition: color 0.25s ease, background 0.25s ease;}
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-nav > li:hover > a, .navbar-nav > li.current_page_parent > a  {color: #d3313a; border-bottom: 5px solid #d3313a;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(234,238,239,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(234,238,239,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(234,238,239,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(234,238,239,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(234,238,239,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(234,238,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeeef',GradientType=0 );
+}
+.error404 .navbar-nav > li.current_page_parent > a {background: transparent; color: #831117; border-bottom-color: transparent;}
+.error404 .navbar-nav > li.current_page_parent > a:hover  {color: #d3313a; border-bottom: 5px solid #d3313a;
     background: rgb(255,255,255);
     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(234,238,239,1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(234,238,239,1)));
@@ -196,7 +208,7 @@ body.home p.callout {width: 90%; font-size: 18px; line-height: 36px; padding-top
 /*Content Pages*/
 /*Contextual images*/
 .contextual-image {position: relative;}
-.contextual-image figcaption {position: absolute; bottom: 30px; left: 10px; width: 94%; padding: 0 24px; color: #fefefe; font: italic 300 21px/1.1 'Roboto', sans-serif; text-shadow: 0 0 5px rgba(0, 0, 0, .34);}
+.contextual-image figcaption {position: absolute; bottom: 17px; left: 10px; width: 94%; padding: 0 24px; color: #fefefe; font: italic 300 21px/1.1 'Roboto', sans-serif; text-shadow: 0 0 5px rgba(0, 0, 0, .34);}
 /*Contextual images variant: Leadership children*/
 .parent-pageid-26 .contextual-image {float: right; margin: 0 0 1rem 2rem;}
 figure.contextual-image img {padding: 10px; background: rgba(255,255,255,.5); box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6); max-width: 100%; height: auto;}
@@ -217,7 +229,7 @@ input.wpcf7-form-control input:-ms-input-placeholder {color: #727c82; opacity: 1
 
 /*Leadership*/
 .leadership-bios figure.headshot img {padding: 6px; background: rgba(255,255,255,.5); box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.6); max-width: 100%; height: auto;}
-.leadership-bios .bio-item {margin-bottom: 55px;}
+.leadership-bios .bio-item {margin-bottom: 30px;}
 .leadership-bios .bio-item h2 {margin-top: 0;}
 .leadership-bios .bio-item h5 {color: #a4aeb4; font-size: 12px; font-weight: 800; text-transform: uppercase;}
 h5.bio {font-family: 'Roboto Slab'; font-weight: 300; font-size: 22px; color: #444d52; margin-bottom: 30px; margin-top: 30px;}

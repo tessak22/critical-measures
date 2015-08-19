@@ -18,7 +18,7 @@
 	            <?php echo bloginfo('name'); ?>. <span>All Rights Reserved</span> | <a href="<?php echo get_permalink(PAGE_LEGAL_DISCLAIMER); ?>"><?php echo get_the_title(PAGE_LEGAL_DISCLAIMER); ?></a>
 	        </div>
 	        <div class="footer-logos col-sm-6 pull-right">
-	         	<a class="cme-logo" href="#" target="_blank">CM ELearning</a>
+	         	<a class="cme-logo" href="http://www.cmelearning.com/" target="_blank">CM ELearning</a>
 	        	<a class="cm-logo" href="/">Critical Measures</a>
 	        </div>
         </div>
