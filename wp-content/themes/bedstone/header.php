@@ -49,7 +49,7 @@ if (defined('ENV_SHOW_ANALYTICS') && ENV_SHOW_ANALYTICS) {
 <header class="site-header container" role="banner">
 
     <nav class="navbar navbar-default hidden-print" id="nav_main" role="navigation">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
