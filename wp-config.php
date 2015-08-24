@@ -67,13 +67,13 @@ $server_host = (!empty($_SERVER['X_FORWARDED_HOST'])) ? $_SERVER['X_FORWARDED_HO
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-$env['DB_NAME'] = 'database_name_here';
+$env['DB_NAME'] = 'critical_main';
 
 /** MySQL database username */
-$env['DB_USER'] = 'username_here';
+$env['DB_USER'] = 'critical_admin';
 
 /** MySQL database password */
-$env['DB_PASSWORD'] = 'password_here';
+$env['DB_PASSWORD'] = 'taDTfNzt,aW*';
 
 /** MySQL hostname */
 $env['DB_HOST'] = 'localhost';
@@ -151,14 +151,16 @@ $env['SYMLINK_ROBOTS'] = array(__DIR__ . '/robots-live.txt', __DIR__ . '/robots.
  */
 $env_hosts = array(
     // do not include http:// prefix
-    'LIVE'        => 'your_LIVE_domain_here',
+    'LIVE'        => 'criticalmeasures.net',
     'STAGING'     => 'your_STAGING_domain_here',
     'PREVIEW'     => 'cm.windmilldesignworks.com',
     'DEVELOPMENT' => 'cm-dev.windmilldesignworks.com'
 );
 
 if (($server_env && 'LIVE' == $server_env) || $server_host == $env_hosts['LIVE']) {
-    // set LIVE variations, although it is recommended that all LIVE settings are simply used as the defaults
+        $env[ 'DB_NAME' ] = 'critical_main';
+        $env[ 'DB_USER' ] = 'critical_admin';
+        $env[ 'DB_PASSWORD' ] = 'taDTfNzt,aW*';
 } else {
     // set all non-LIVE variations
     $env['ENV_SHOW_ANALYTICS'] = false;
