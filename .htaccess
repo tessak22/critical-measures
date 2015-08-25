@@ -1,8 +1,8 @@
 # WINDMILL CUSTOM
 # add www prefix
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
-RewriteRule ^(.*) http://www.example.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^criticalmeasures\.net$ [NC]
+RewriteRule ^(.*) http://www.criticalmeasures.net/$1 [R=301,L]
 
 # WINDMILL CUSTOM
 # hide git directories and files
