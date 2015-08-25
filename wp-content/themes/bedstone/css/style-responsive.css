@@ -23,6 +23,7 @@
     body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
     .offices {padding-top: 20px;}
     .navbar-default .navbar-nav > li > a {padding: 22px 9px 25px; font-size: 14px;}
+    .navbar-default .navbar-nav > li > a.dropdown-toggle {padding: 21px 12px 26px;}
     .services ul {margin: 0; width: 100%; padding-left: 0;}
     .services li {float: none;}
     .cta-contact {width: 370px;}
@@ -43,7 +44,7 @@
     .navbar-collapse {width: 100%; margin-top: 14px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px -6px #000; border-left: 1px solid #ccc; border-right: 1px solid #ccc; position: relative; left: -15px; padding-bottom: 15px;}
     .navbar-default {background: transparent; border: none;}
     .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-nav > li:hover > a, .navbar-nav > li.current_page_parent > a {background: transparent; border-bottom: 5px solid transparent;}
-    .navbar-default .navbar-nav > li > a {padding: 8px 17px 0; font-size: 16px;}
+    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a.dropdown-toggle {padding: 8px 17px 0; font-size: 16px;}
     .dropdown-menu > li > a {margin: 3px 30px;}
     .dropdown-menu > li > a {white-space: normal;}
     /*.navbar-default {background: #fff;}
