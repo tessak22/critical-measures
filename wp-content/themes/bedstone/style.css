@@ -252,7 +252,7 @@ body.sticky-site-footer {margin-bottom: 116px; /* match .site-footer height */}
 .site-footer {background: url('images/footer-bg.png') repeat-x bottom center; padding-top: 40px; color: #d6cecf; position: relative;}
 .footer-content {position: absolute; bottom: 55px; width: 100%;}
 .copyright {font-size: 14px; padding-top: 5px;}
-.copyright a {padding-left: 9px; color: #d6cecf;}
+.copyright a {padding: 0 9px; color: #d6cecf;}
 .copyright span {padding-right: 9px;}
 body.sticky-site-footer .site-footer {height: 471px; position: absolute; bottom: 0; width: 100%;}/* match body.sticky-site-footer margin-bottom */
 .footer-logos a {text-align: right; float: right; text-indent: 150%; white-space: nowrap; overflow: hidden;}
